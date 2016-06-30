@@ -30,6 +30,8 @@ node default {
   # Example:
   #   class { 'my_class': }
 
-  include dnsmasq
-
+  class {'dnsmasq':
+    spoofed_hostnames => ['www.alice.com', 'www.bob.com'],
+    spoofed_addresses => ['1.2.3.4', '1.2.3.4']
+  }
 }
