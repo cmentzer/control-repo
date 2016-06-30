@@ -31,17 +31,15 @@ node default {
   #   class { 'my_class': }
 
   class {'dnsmasq':
-
-    spoofed_sites      => ['test1','test2']
-    #    spoofed_sites => [
-    #      {
-    #        hostname => 'www.alice.com',
-    #        address  => '1.2.3.4'
-    #      },
-    #      {
-    #        hostname => 'www.bob.com',
-    #        address  => '1.2.3.4'
-    #      }
-    #    ]
+    spoofed_sites => [
+      {
+        hostname => 'www.alice.com',
+        address  => '1.2.3.4'
+      },
+      {
+        hostname => 'www.bob.com',
+        address  => '1.2.3.4'
+      }
+    ]
   }
 }
