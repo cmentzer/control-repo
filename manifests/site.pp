@@ -26,7 +26,7 @@ File { backup => false }
 # specified in the console for that node.
 
 node 'pdx-agent-1663.puppet.lan' { 
-  contain site::role::webserver
+  include role::webserver
 }
 
 node default {
