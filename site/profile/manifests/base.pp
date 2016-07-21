@@ -7,7 +7,7 @@ class profile::base {
 
   Sysctl{ensure => present}
 
-  $sysctl_params = hiera_hash('sysctl')
+  $sysctl_params = hiera_hash('sysctl_params')
   create_resources(sysctl, $sysctl_params)
 
 
