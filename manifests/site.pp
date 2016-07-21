@@ -25,10 +25,18 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-node 'pdx-agent-1663.puppet.lan' { 
-  include role::on_site_machines
-}
+hiera_include('classes')
 
+# Node classification is handled in the Puppet Enterprise Console:
+#
+# Specifically, we assign a variable to a group of nodes in the console 
+#   (for example location)
+# and then we can classify the nodes based on those variables in the console.
+#
+# So we assign the "webserver" role (or some other role) to each node on the
+# console, and that is the extent of classification. For specific variable assignment
+# on each node we use hiera. 
+#
 node default {
 
 }
