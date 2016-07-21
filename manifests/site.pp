@@ -25,7 +25,6 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
-hiera_include('classes')
 
 # Node classification is handled in the Puppet Enterprise Console:
 #
