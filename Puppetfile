@@ -9,6 +9,7 @@ mod "puppetlabs/motd"
 mod "puppetlabs/ntp"
 mod "herculesteam/augeasproviders_sysctl", '2.0.2'
 mod "herculesteam/augeasproviders_core", '2.1.2'
+mod "saz/resolv_conf"
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
 
