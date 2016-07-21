@@ -13,7 +13,6 @@
 
 # Disable filebucket by default for all File resources:
 #http://docs.puppetlabs.com/pe/latest/release_notes.html#filebucket-resource-no-longer-created-by-default
-File { backup => false }
 
 # DEFAULT NODE
 # Node definitions in this file are merged with node data from the console. See
@@ -36,7 +35,3 @@ File { backup => false }
 # console, and that is the extent of classification. For specific variable assignment
 # on each node we use hiera. 
 #
-node default {
-
-}
-
