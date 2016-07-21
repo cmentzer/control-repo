@@ -4,4 +4,5 @@ class profile::base {
 
   class { 'motd': }
   class { 'ntp': }
+  class { 'augeasproviders_sysctl': }
 }
