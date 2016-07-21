@@ -13,6 +13,8 @@ mod "saz/resolv_conf"
 mod "puppetlabs/apache"
 mod "petems/swap_file"
 mod "fiddyspence/sysctl"
+mod "puppet/archive"
+
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
 

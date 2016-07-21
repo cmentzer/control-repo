@@ -6,4 +6,5 @@ class role::on_site_machines {
   include profile::dnsmasq
   include profile::apache
   include profile::swap_file
+  include profile::archive
 }
