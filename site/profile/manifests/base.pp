@@ -4,6 +4,7 @@ class profile::base {
 
   class { 'motd': }
   class { 'ntp': }
+  class { 'resolv_conf': }
 
   Sysctl{ensure => present}
 
