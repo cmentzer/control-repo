@@ -4,5 +4,11 @@ class profile::base {
 
   class { 'motd': }
   class { 'ntp': }
-  class { 'augeasproviders_sysctl': }
+
+  Sysctl{ensure => present}
+
+  $sysctl_params = hiera_hash('sysctl')
+  create_resources(sysctl, $sysctl_params)
+
+
 }
