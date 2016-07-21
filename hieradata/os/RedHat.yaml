@@ -1,7 +1,7 @@
 # manage sysctl.conf here
 ---
 
-sysctl:
+sysctl_params:
   'net.ipv4.conf.all.send_redirects'
     value: 0
   'net.ipv4.conf.default.send_redirects'
