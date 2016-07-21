@@ -1,9 +1,6 @@
 # manage ntp and resolv.conf here
 
 ---
-classes: 
-  - ntp
-
 ntp::servers:
   - 0.us.pool.ntp.org iburst
   - 1.us.pool.ntp.org iburst

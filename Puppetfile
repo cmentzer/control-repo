@@ -5,7 +5,7 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/motd"
 mod "puppetlabs/ntp"
 mod "herculesteam/augeasproviders_sysctl"
-mod "herculesteam/augeasproviders_code"
+mod "herculesteam/augeasproviders_core"
 #mod "puppetlabs/stdlib",      '4.11.0'
 #mod "puppetlabs/concat",      '2.1.0'
 
